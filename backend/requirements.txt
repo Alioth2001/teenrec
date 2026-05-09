@@ -3,3 +3,5 @@ psycopg2-binary
 scikit-learn
 gunicorn
 djangorestframework
+whitenoise
+django-cors-headers
