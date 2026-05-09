@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="questionnaire-container">
+  <h2>Questionnaire</h2>
+  <p class="intro-text">
+    Please answer each question honestly. Select one option per question.
+  </p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</div>
+{% endblock %}

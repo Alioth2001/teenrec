@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Continue as Guest</h2>
+<p>You will be allowed one recommendation after filling the questionnaire.</p>
+<a href="{% url 'questionnaire:fill' %}">Proceed to Questionnaire</a>
+{% endblock %}

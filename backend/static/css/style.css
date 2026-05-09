@@ -1,0 +1,188 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content wrapper */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+/* Welcome container */
+.welcome-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 700px;
+    width: 100%;
+}
+
+.welcome-container h2 {
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* User and guest actions */
+.user-actions a,
+.guest-actions a {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.user-actions a:hover,
+.guest-actions a:hover {
+    background-color: #45a049;
+}
+
+/* Forms */
+form {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Questionnaire container */
+.questionnaire-container {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+/* Title and intro */
+.questionnaire-container h2 {
+    text-align: center;
+    color: #2e7d32;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.questionnaire-container .intro-text {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Form fields */
+.questionnaire-container form p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.questionnaire-container label {
+    font-weight: 600;
+    margin-right: 10px;
+    min-width: 150px;
+}
+
+.questionnaire-container input[type="radio"]{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.questionnaire-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit button */
+.btn-submit {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .questionnaire-container {
+        padding: 25px;
+    }
+}

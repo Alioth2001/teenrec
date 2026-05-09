@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="questionnaire-container">
+  <h2>Teenage Extra‑Curricular Activities Questionnaire</h2>
+  <p class="intro-text">
+    Tell us about your interests and preferences so we can recommend activities that fit you best.
+  </p>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</div>
+{% endblock %}

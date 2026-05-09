@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your Subscription</h2>
+{% if subscription %}
+  <p>Current Tier: <strong>{{ subscription.tier|title }}</strong></p>
+  {% if subscription.tier == "free" %}
+    <a href="{% url 'subscriptions:upgrade' %}">Upgrade to Premium</a>
+  {% else %}
+    <a href="{% url 'subscriptions:downgrade' %}">Downgrade to Free</a>
+  {% endif %}
+{% else %}
+  <p>No subscription found. You are on the default Free tier.</p>
+  <a href="{% url 'subscriptions:upgrade' %}">Upgrade to Premium</a>
+{% endif %}
+{% endblock %}

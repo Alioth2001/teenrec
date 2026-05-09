@@ -1,0 +1,90 @@
+[
+  {
+    "model": "activities.activity",
+    "pk": 1,
+    "fields": {
+      "name": "Football Club",
+      "category": "Sports",
+      "location": "London",
+      "fee": "0.00",
+      "indoor_outdoor": "outdoor"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 2,
+    "fields": {
+      "name": "Basketball Training",
+      "category": "Sports",
+      "location": "Manchester",
+      "fee": "10.00",
+      "indoor_outdoor": "indoor"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 3,
+    "fields": {
+      "name": "Music Band",
+      "category": "Music",
+      "location": "Liverpool",
+      "fee": "5.00",
+      "indoor_outdoor": "indoor"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 4,
+    "fields": {
+      "name": "Drama Society",
+      "category": "Drama/Acting",
+      "location": "Birmingham",
+      "fee": "0.00",
+      "indoor_outdoor": "indoor"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 5,
+    "fields": {
+      "name": "Coding Workshop",
+      "category": "Technology",
+      "location": "Cambridge",
+      "fee": "15.00",
+      "indoor_outdoor": "indoor"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 6,
+    "fields": {
+      "name": "Debate Club",
+      "category": "Debate/Public Speaking",
+      "location": "Oxford",
+      "fee": "0.00",
+      "indoor_outdoor": "indoor"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 7,
+    "fields": {
+      "name": "Community Volunteering",
+      "category": "Community Service",
+      "location": "Leeds",
+      "fee": "0.00",
+      "indoor_outdoor": "both"
+    }
+  },
+  {
+    "model": "activities.activity",
+    "pk": 8,
+    "fields": {
+      "name": "Science Club",
+      "category": "Science",
+      "location": "Edinburgh",
+      "fee": "0.00",
+      "indoor_outdoor": "indoor"
+    }
+  }
+]

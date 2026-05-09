@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Available Activities</h2>
+<ul>
+  {% for activity in activities %}
+    <li>
+      <strong>{{ activity.name }}</strong> — {{ activity.category }}  
+      (Location: {{ activity.location }})
+      {% if activity.fee %}
+        Fee: £{{ activity.fee }}
+      {% else %}
+        Free
+      {% endif %}
+      — {{ activity.indoor_outdoor|title }}
+    </li>
+  {% empty %}
+    <li>No activities available.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
