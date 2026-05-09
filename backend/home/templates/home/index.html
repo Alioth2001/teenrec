@@ -14,8 +14,8 @@
             </div>
         {% else %}
             <div class="guest-actions">
-                <a href="{% url 'signup' %}" class="btn">Sign Up</a>
-                <a href="{% url 'login' %}" class="btn">Login</a>
+                <a href="{% url 'users:signup' %}" class="btn">Sign Up</a>
+                <a href="{% url 'users:login' %}" class="btn">Login</a>
                 <a href="{% url 'questionnaire:fill' %}" class="btn">Continue as Guest</a>
             </div>
         {% endif %}
